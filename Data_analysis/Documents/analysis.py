@@ -1,19 +1,18 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 
-df = pd.read_excel("23工程管理本科1班.xls", engine="xlrd")
+df = pd.read_excel(r"C:\Users\Lanyi\Desktop\Project\Python_Program\Data_analysis\Documents\23工程管理本科1班.xls")
 
-questions = df.iloc[:, 2:]
+print(df.head())
 
-full_mark = 1  
-rates = questions.mean(axis=0) / full_mark * 100
+print("\nData Types:\n", df.dtypes)
 
-plt.figure(figsize=(10, 6))
-plt.plot(rates.index, rates.values, marker="o")
-plt.xticks(rotation=45)
-plt.ylim(0, 100)
-plt.title("每道题得分率")
-plt.xlabel("题号")
-plt.ylabel("得分率 (%)")
-plt.grid(True)
-plt.show()
+numeric_df = df.select_dtypes(include=['number'])
+
+score_rate = numeric_df.mean() / numeric_df.max()
+
+print("\nScore Rate (mean/max):\n", score_rate)
+
+output_path = r"C:\Users\Lanyi\Desktop\Project\Python_Program\Data_analysis\Documents\score_rate.xlsx"
+score_rate.to_excel(output_path, sheet_name="Score Rate")
+
+print(f"\nScore rate has been saved to: {output_path}")
