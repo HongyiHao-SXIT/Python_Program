@@ -1,0 +1,48 @@
+PS C:\Users\Lanyi\Desktop\Project\Distributed_Machine_Learning_Foundations_and_Algorithms> & D:/anaconda3/python.exe c:/Users/Lanyi/Desktop/Project/Distributed_Machine_Learning_Foundations_and_Algorithms/Assignment/Assignment_3/hw3.py
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 2, 'num_local_steps': 5}
+Training Accuracy: 99.81%
+Test Accuracy: 98.38%
+==================================================
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 5}
+Training Accuracy: 99.93%
+Test Accuracy: 98.24%
+==================================================
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 5}
+Training Accuracy: 99.93%
+Test Accuracy: 98.24%
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 5}
+Training Accuracy: 99.93%
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 5}
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 5}
+Training Accuracy: 99.93%
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 5}
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 5}
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 5}
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 5}
+Training Accuracy: 99.93%
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 5}
+Training Accuracy: 99.93%
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 5}
+Training Accuracy: 99.93%
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 5}
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 5}
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 5}
+Training Accuracy: 99.93%
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 5}
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 5}
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 5}
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 5}
+Training Accuracy: 99.93%
+Test Accuracy: 98.24%
+==================================================
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 8, 'num_local_steps': 5}
+Training Accuracy: 99.94%
+Test Accuracy: 98.42%
+==================================================
+Configuration: {'batch_size': 32, 'num_communications': 50, 'learning_rate': 0.1, 'num_workers': 4, 'num_local_steps': 20}        
+Training Accuracy: 100.00%
+Test Accuracy: 98.38%
+==================================================
+PS C:\Users\Lanyi\Desktop\Project\Distributed_Machine_Learning_Foundations_and_Algorithms> -
+
+
