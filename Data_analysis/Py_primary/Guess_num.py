@@ -1,8 +1,8 @@
 import random
 difficulty_level = input("Difficulty level: (easy or hard)")
-if difficulty_level == "easy":  # Determine selected difficulty
-    randon_number = random.randint(1, 100)  # Random number range
-    number_times = 0  # Attempts
+if difficulty_level == "easy": 
+    randon_number = random.randint(1, 100)
+    number_times = 0
     while True:
         number = int(input("Please enter a number:"))
         number_times += 1
@@ -16,8 +16,8 @@ if difficulty_level == "easy":  # Determine selected difficulty
     if number_times > 10:
         print("You need more practice")
 elif difficulty_level == "hard":
-    randon_number = random.randint(1, 100)  # Random number range
-    number_times = 0  # Attempts
+    randon_number = random.randint(1, 100)
+    number_times = 0
     chance = int(input("Please enter your desired number of attempts:"))
     while True:
         number = int(input("Please enter a number:"))
