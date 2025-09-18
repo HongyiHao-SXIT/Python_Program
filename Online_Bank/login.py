@@ -1,14 +1,3 @@
-def register():
-    print("\n--- Register ---")
-    account = input("Enter account: ")
-    password = input("Enter password: ")
-
-    with open("users.txt", "a") as f:
-        f.write(f"{account},{password}\n")
-
-    print("✅ Registration successful!\n")
-
-
 def login():
     print("\n--- Login ---")
     account = input("Enter account: ")
@@ -22,29 +11,21 @@ def login():
         return False
 
     for user in users:
-        acc, pwd = user.strip().split(",")
+        try:
+            user_data = user.strip().split(",")
+            if len(user_data) < 5:
+                print(f"⚠ Invalid user data in file: {user.strip()}. Skipping.")
+                continue
+
+            ID, acc, pwd, phone, address = user_data
+        except ValueError:
+            print(f"⚠ Error reading user data: {user.strip()}. Skipping.")
+            continue
+
         if account == acc and password == pwd:
             print("✅ Login successful!\n")
-            return True
+
+            return {"ID": ID, "account": acc, "phone": phone, "address": address}
 
     print("❌ Login failed. Wrong account or password.\n")
     return False
-
-
-def main():
-    while True:
-        choice = input("Choose an option: [1] Register  [2] Login  [3] Exit : ")
-
-        if choice == "1":
-            register()
-        elif choice == "2":
-            login()
-        elif choice == "3":
-            print("Bye!")
-            break
-        else:
-            print("Invalid choice. Please try again.\n")
-
-
-if __name__ == "__main__":
-    main()

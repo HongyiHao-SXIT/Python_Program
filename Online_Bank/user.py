@@ -1,4 +1,4 @@
-class User:
+class User():
     def __init__(self, ID="Default", Name="Default", Address="Default", 
                  Phone_Num="Default", Age="Default", Account="Default", 
                  Password="Default", Balance=0.0):
@@ -10,6 +10,16 @@ class User:
         self.Account = Account
         self.Password = Password
         self.Balance = Balance
-
-u1 = User(Name="Alice", Balance=100.5)
-print(u1.Name, u1.Balance)
+        
+    def save_money(self, money: float):
+        self.Balance += money
+        print(f"${money} has been added. New balance: ${self.Balance}")
+        
+    def display_user_info(self):
+        print(f"User ID: {self.ID}")
+        print(f"Name: {self.Name}")
+        print(f"Address: {self.Address}")
+        print(f"Phone Number: {self.Phone_Num}")
+        print(f"Age: {self.Age}")
+        print(f"Account: {self.Account}")
+        print(f"Balance: ${self.Balance}")
