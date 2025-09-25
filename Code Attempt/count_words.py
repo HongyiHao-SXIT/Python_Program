@@ -1,33 +1,10 @@
-from collections import Counter
-import re
+sentence = input("Enter a sentence: ").lower().split()
 
-def read_text():
-    return input("Enter text: ")
+freq = {}
 
+for ch in sentence:
+    if ch.isalpha:
+        freq[ch] = freq.get(ch, 0) + 1
 
-def split_words(text):
-    text = re.sub(r'[^\w\s]', '', text)
-    return text.lower().split()
-
-
-def count_words(words):
-    return Counter(words)
-
-
-def sort_words(word_count):
-    return word_count.most_common()
-
-def print_word_count(sorted_list):
-    for word, count in sorted_list:
-        print(f"{word}: {count}")
-
-
-def main():
-    text = read_text()
-    words = split_words(text)
-    word_count = count_words(words)
-    sorted_list = sort_words(word_count)
-    print_word_count(sorted_list)
-
-if __name__ == "__main__":
-    main()
+for k in sorted(freq):
+    print(f"{k}: {freq[k]}")
